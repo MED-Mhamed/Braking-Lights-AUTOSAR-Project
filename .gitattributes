@@ -2,15 +2,26 @@
 * text=auto
 # Ignore HTML files from language stats
 *.html linguist-vendored
+# Ignore JavaScript files from language stats
+*.js linguist-vendored
 
-# Mark MATLAB files
+# Ignore Makefiles from language stats
+Makefile linguist-vendored
+
+# Ignore CSS files from language stats
+*.css linguist-vendored
+
+# Ignore Batch files from language stats
+*.bat linguist-vendored
+
+# MATLAB files
 *.m linguist-language=MATLAB
 *.slx linguist-language=MATLAB
 *.sldd linguist-language=MATLAB
 
-# Mark C files
+# C language files
 *.c linguist-language=C
 *.h linguist-language=C
 
-# Mark ARXML files
+# AUTOSAR ARXML files
 *.arxml linguist-language=ARXML
