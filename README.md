@@ -49,7 +49,7 @@ To interactively simulate the system, open the Simulink model and run it in Simu
 
 If desired, generate AUTOSAR code by using Simulink Code Generator for your hardware implementation.
 
-##Project Architecture and Simulation
+## Project Architecture and Simulation
 1. Architecture and Software Components (SWCs)
 This diagram shows the architecture and SWCs of the braking light AUTOSAR system, detailing the components such as the brake actuator, pedal sensor, throttle sensor, and the brake controller.
 
@@ -57,6 +57,6 @@ This diagram shows the architecture and SWCs of the braking light AUTOSAR system
 2. Simulation Results
 Below is an image showing the simulation results of the braking light AUTOSAR system.
  
-##Open to Development
+## Open to Development
 
 This is the first version of the braking light AUTOSAR project, and I am open to collaboration and suggestions for improvement. Feel free to open issues or contribute to future versions.
