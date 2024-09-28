@@ -1,0 +1,10 @@
+This file is the manifest for the generated code from model 'my_brake_actuator'.
+C:\Users\Mhamed\Documents\project\matlab project\1\8_12\DesignAUTOSARComponentsExample\mymy\my_brake_actuator_autosar_rtw\my_brake_actuator.c
+C:\Users\Mhamed\Documents\project\matlab project\1\8_12\DesignAUTOSARComponentsExample\mymy\my_brake_actuator_autosar_rtw\my_brake_actuator.h
+C:\Users\Mhamed\Documents\project\matlab project\1\8_12\DesignAUTOSARComponentsExample\mymy\my_brake_actuator_autosar_rtw\my_brake_actuator_private.h
+C:\Users\Mhamed\Documents\project\matlab project\1\8_12\DesignAUTOSARComponentsExample\mymy\my_brake_actuator_autosar_rtw\my_brake_actuator_types.h
+C:\Users\Mhamed\Documents\project\matlab project\1\8_12\DesignAUTOSARComponentsExample\mymy\my_brake_actuator_autosar_rtw\my_brake_actuator_component.arxml
+C:\Users\Mhamed\Documents\project\matlab project\1\8_12\DesignAUTOSARComponentsExample\mymy\my_brake_actuator_autosar_rtw\my_brake_actuator_datatype.arxml
+C:\Users\Mhamed\Documents\project\matlab project\1\8_12\DesignAUTOSARComponentsExample\mymy\my_brake_actuator_autosar_rtw\my_brake_actuator_implementation.arxml
+C:\Users\Mhamed\Documents\project\matlab project\1\8_12\DesignAUTOSARComponentsExample\mymy\my_brake_actuator_autosar_rtw\my_brake_actuator_interface.arxml
+C:\Users\Mhamed\Documents\project\matlab project\1\8_12\DesignAUTOSARComponentsExample\mymy\my_brake_actuator_autosar_rtw\my_brake_actuator_manifest.txt

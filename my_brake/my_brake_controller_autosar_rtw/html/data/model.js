@@ -1,0 +1,1 @@
+var modelInfo = {model:"my_brake_controller"};var modelHierarchy=[{model:"my_brake_controller",relativePath:"_internal.html",parent:"null"},];var AddCode = true;

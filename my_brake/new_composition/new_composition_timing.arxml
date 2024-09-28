@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Auto generated XML Component Description for model new_composition
+Model version                : 1.2
+Simulink Coder version       : Simulink Coder 24.1 (R2024a) 19-Nov-2023
+XML source code generated on : Mon Aug 12 17:50:04 2024
+Model Checksum               : 3714146560 1309067728 667803177 1271658009
+-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00051.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>Timing</SHORT-NAME>
+            <ELEMENTS>
+                <VFB-TIMING UUID="f5602b63-866b-5e0e-c11a-ac036e6f6def">
+                    <SHORT-NAME>new_composition_timing</SHORT-NAME>
+                    <TIMING-REQUIREMENTS>
+                        <EXECUTION-ORDER-CONSTRAINT UUID="2500c9fe-acff-5b24-df56-dd2f5ff7f624">
+                            <SHORT-NAME>EOC</SHORT-NAME>
+                            <BASE-COMPOSITION-REF DEST="COMPOSITION-SW-COMPONENT-TYPE">/Components/new_composition</BASE-COMPOSITION-REF>
+                            <ORDERED-ELEMENTS>
+                                <EOC-EXECUTABLE-ENTITY-REF UUID="7c1b6e69-c101-5edf-9beb-d45588250149">
+                                    <SHORT-NAME>Actuator_Runnable_Step</SHORT-NAME>
+                                    <COMPONENT-IREF>
+                                        <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/new_composition/Actuator</TARGET-COMPONENT-REF>
+                                    </COMPONENT-IREF>
+                                    <EXECUTABLE-REF DEST="RUNNABLE-ENTITY">/Components/ThrottlePositionActuator/ThrottlePositionActuator_InternalBehavior/Runnable_Step</EXECUTABLE-REF>
+                                    <SUCCESSOR-REFS>
+                                        <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/new_composition_timing/EOC/Controller_Runnable_Step</SUCCESSOR-REF>
+                                    </SUCCESSOR-REFS>
+                                </EOC-EXECUTABLE-ENTITY-REF>
+                                <EOC-EXECUTABLE-ENTITY-REF UUID="d97f6567-10be-5dd2-34d2-5499207cad88">
+                                    <SHORT-NAME>Controller_Runnable_Step</SHORT-NAME>
+                                    <COMPONENT-IREF>
+                                        <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/new_composition/Controller</TARGET-COMPONENT-REF>
+                                    </COMPONENT-IREF>
+                                    <EXECUTABLE-REF DEST="RUNNABLE-ENTITY">/Components/Controller/Controller_InternalBehavior/Runnable_Step</EXECUTABLE-REF>
+                                    <SUCCESSOR-REFS>
+                                        <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/new_composition_timing/EOC/Pedal_sensor_Runnable_Step</SUCCESSOR-REF>
+                                    </SUCCESSOR-REFS>
+                                </EOC-EXECUTABLE-ENTITY-REF>
+                                <EOC-EXECUTABLE-ENTITY-REF UUID="5edf1ed3-04e7-5530-ed05-2ca597db924c">
+                                    <SHORT-NAME>Pedal_sensor_Runnable_Step</SHORT-NAME>
+                                    <COMPONENT-IREF>
+                                        <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/new_composition/Pedal_sensor</TARGET-COMPONENT-REF>
+                                    </COMPONENT-IREF>
+                                    <EXECUTABLE-REF DEST="RUNNABLE-ENTITY">/Components/AccelerationPedalPositionSensor/AccelerationPedalPositionSensor_InternalBehavior/Runnable_Step</EXECUTABLE-REF>
+                                    <SUCCESSOR-REFS>
+                                        <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/new_composition_timing/EOC/Throttle_sensor_Runnable_Step</SUCCESSOR-REF>
+                                    </SUCCESSOR-REFS>
+                                </EOC-EXECUTABLE-ENTITY-REF>
+                                <EOC-EXECUTABLE-ENTITY-REF UUID="2eabb9bf-0ddf-59bf-90df-141041b6fe66">
+                                    <SHORT-NAME>Throttle_sensor_Runnable_Step</SHORT-NAME>
+                                    <COMPONENT-IREF>
+                                        <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/new_composition/Throttle_sensor</TARGET-COMPONENT-REF>
+                                    </COMPONENT-IREF>
+                                    <EXECUTABLE-REF DEST="RUNNABLE-ENTITY">/Components/ThrottlePositionSensor/ThrottlePositionSensor_InternalBehavior/Runnable_Step</EXECUTABLE-REF>
+                                </EOC-EXECUTABLE-ENTITY-REF>
+                            </ORDERED-ELEMENTS>
+                        </EXECUTION-ORDER-CONSTRAINT>
+                    </TIMING-REQUIREMENTS>
+                    <COMPONENT-REF DEST="COMPOSITION-SW-COMPONENT-TYPE">/Components/new_composition</COMPONENT-REF>
+                </VFB-TIMING>
+            </ELEMENTS>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

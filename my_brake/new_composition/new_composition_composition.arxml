@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Auto generated XML Component Description for model new_composition
+Model version                : 1.2
+Simulink Coder version       : Simulink Coder 24.1 (R2024a) 19-Nov-2023
+XML source code generated on : Mon Aug 12 17:50:04 2024
+Model Checksum               : 3714146560 1309067728 667803177 1271658009
+-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00051.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>Components</SHORT-NAME>
+            <ELEMENTS>
+                <COMPOSITION-SW-COMPONENT-TYPE UUID="d2118561-6381-5fdd-ea70-cae6cdd00ff4">
+                    <SHORT-NAME>new_composition</SHORT-NAME>
+                    <PORTS>
+                        <R-PORT-PROTOTYPE UUID="f9fdf7f8-cc96-5478-6da4-754d75b36970">
+                            <SHORT-NAME>TPS_HwIO</SHORT-NAME>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/TPS_HwIO</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="28e3c926-d443-5658-439f-2b4c8fb7172c">
+                            <SHORT-NAME>APP_HwIO</SHORT-NAME>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/APP_HwIO</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <P-PORT-PROTOTYPE UUID="7c98bfb3-da7c-5ec5-e042-2c35e866cba4">
+                            <SHORT-NAME>ThrCmd_HwIO</SHORT-NAME>
+                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/ThrCmd_HwIO</PROVIDED-INTERFACE-TREF>
+                        </P-PORT-PROTOTYPE>
+                    </PORTS>
+                    <COMPONENTS>
+                        <SW-COMPONENT-PROTOTYPE UUID="d900a446-aa8d-5ea8-7c61-8644108445a2">
+                            <SHORT-NAME>Throttle_sensor</SHORT-NAME>
+                            <TYPE-TREF DEST="SENSOR-ACTUATOR-SW-COMPONENT-TYPE">/Components/ThrottlePositionSensor</TYPE-TREF>
+                        </SW-COMPONENT-PROTOTYPE>
+                        <SW-COMPONENT-PROTOTYPE UUID="78fe8088-13a2-5cf8-8805-d7a865a3ee68">
+                            <SHORT-NAME>Pedal_sensor</SHORT-NAME>
+                            <TYPE-TREF DEST="SENSOR-ACTUATOR-SW-COMPONENT-TYPE">/Components/AccelerationPedalPositionSensor</TYPE-TREF>
+                        </SW-COMPONENT-PROTOTYPE>
+                        <SW-COMPONENT-PROTOTYPE UUID="a4fd5802-4659-529a-56aa-2227096c084f">
+                            <SHORT-NAME>Controller</SHORT-NAME>
+                            <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/Components/Controller</TYPE-TREF>
+                        </SW-COMPONENT-PROTOTYPE>
+                        <SW-COMPONENT-PROTOTYPE UUID="3499945e-6d35-5fa3-e605-e042b094740b">
+                            <SHORT-NAME>Actuator</SHORT-NAME>
+                            <TYPE-TREF DEST="SENSOR-ACTUATOR-SW-COMPONENT-TYPE">/Components/ThrottlePositionActuator</TYPE-TREF>
+                        </SW-COMPONENT-PROTOTYPE>
+                    </COMPONENTS>
+                    <CONNECTORS>
+                        <ASSEMBLY-SW-CONNECTOR UUID="484326d4-4b04-5f20-0690-fa9e51c91bda">
+                            <SHORT-NAME>Controller_ThrCmd_Percent_Actuator_ThrCmd_Percent</SHORT-NAME>
+                            <PROVIDER-IREF>
+                                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/new_composition/Controller</CONTEXT-COMPONENT-REF>
+                                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Components/Controller/ThrCmd_Percent</TARGET-P-PORT-REF>
+                            </PROVIDER-IREF>
+                            <REQUESTER-IREF>
+                                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/new_composition/Actuator</CONTEXT-COMPONENT-REF>
+                                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Components/ThrottlePositionActuator/ThrCmd_Percent</TARGET-R-PORT-REF>
+                            </REQUESTER-IREF>
+                        </ASSEMBLY-SW-CONNECTOR>
+                        <ASSEMBLY-SW-CONNECTOR UUID="4bffbed3-815c-5796-51ab-f38199ab4582">
+                            <SHORT-NAME>Pedal_sensor_APP_Percent_Controller_APP_Percent</SHORT-NAME>
+                            <PROVIDER-IREF>
+                                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/new_composition/Pedal_sensor</CONTEXT-COMPONENT-REF>
+                                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Components/AccelerationPedalPositionSensor/APP_Percent</TARGET-P-PORT-REF>
+                            </PROVIDER-IREF>
+                            <REQUESTER-IREF>
+                                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/new_composition/Controller</CONTEXT-COMPONENT-REF>
+                                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Components/Controller/APP_Percent</TARGET-R-PORT-REF>
+                            </REQUESTER-IREF>
+                        </ASSEMBLY-SW-CONNECTOR>
+                        <ASSEMBLY-SW-CONNECTOR UUID="87d721aa-4e0e-5a20-f239-f14f15e0939b">
+                            <SHORT-NAME>Throttle_sensor_TPS_Percent_Controller_TPS_Percent</SHORT-NAME>
+                            <PROVIDER-IREF>
+                                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/new_composition/Throttle_sensor</CONTEXT-COMPONENT-REF>
+                                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Components/ThrottlePositionSensor/TPS_Percent</TARGET-P-PORT-REF>
+                            </PROVIDER-IREF>
+                            <REQUESTER-IREF>
+                                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/new_composition/Controller</CONTEXT-COMPONENT-REF>
+                                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Components/Controller/TPS_Percent</TARGET-R-PORT-REF>
+                            </REQUESTER-IREF>
+                        </ASSEMBLY-SW-CONNECTOR>
+                        <DELEGATION-SW-CONNECTOR UUID="d6a8609d-1053-5f77-a6fe-78cb6017a3fd">
+                            <SHORT-NAME>Actuator_ThrCmd_HwIO_ThrCmd_HwIO</SHORT-NAME>
+                            <INNER-PORT-IREF>
+                                <P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/new_composition/Actuator</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Components/ThrottlePositionActuator/ThrCmd_HwIO</TARGET-P-PORT-REF>
+                                </P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                            </INNER-PORT-IREF>
+                            <OUTER-PORT-REF DEST="P-PORT-PROTOTYPE">/Components/new_composition/ThrCmd_HwIO</OUTER-PORT-REF>
+                        </DELEGATION-SW-CONNECTOR>
+                        <DELEGATION-SW-CONNECTOR UUID="3116e310-91f8-5812-9cc3-9b9888510602">
+                            <SHORT-NAME>TPS_HwIO_Throttle_sensor_TPS_HwIO</SHORT-NAME>
+                            <INNER-PORT-IREF>
+                                <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/new_composition/Throttle_sensor</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Components/ThrottlePositionSensor/TPS_HwIO</TARGET-R-PORT-REF>
+                                </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                            </INNER-PORT-IREF>
+                            <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/Components/new_composition/TPS_HwIO</OUTER-PORT-REF>
+                        </DELEGATION-SW-CONNECTOR>
+                        <DELEGATION-SW-CONNECTOR UUID="4607549d-97eb-5a0c-4867-0f25106e45ca">
+                            <SHORT-NAME>APP_HwIO_Pedal_sensor_APP_HwIO</SHORT-NAME>
+                            <INNER-PORT-IREF>
+                                <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/new_composition/Pedal_sensor</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Components/AccelerationPedalPositionSensor/APP_HwIO</TARGET-R-PORT-REF>
+                                </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                            </INNER-PORT-IREF>
+                            <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/Components/new_composition/APP_HwIO</OUTER-PORT-REF>
+                        </DELEGATION-SW-CONNECTOR>
+                    </CONNECTORS>
+                </COMPOSITION-SW-COMPONENT-TYPE>
+            </ELEMENTS>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

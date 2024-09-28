@@ -1,0 +1,10 @@
+This file is the manifest for the generated code from model 'my_brake_pedal_sensor'.
+C:\Users\Mhamed\Documents\project\matlab project\1\8_12\DesignAUTOSARComponentsExample\mymy\my_brake_pedal_sensor_autosar_rtw\my_brake_pedal_sensor.c
+C:\Users\Mhamed\Documents\project\matlab project\1\8_12\DesignAUTOSARComponentsExample\mymy\my_brake_pedal_sensor_autosar_rtw\my_brake_pedal_sensor.h
+C:\Users\Mhamed\Documents\project\matlab project\1\8_12\DesignAUTOSARComponentsExample\mymy\my_brake_pedal_sensor_autosar_rtw\my_brake_pedal_sensor_private.h
+C:\Users\Mhamed\Documents\project\matlab project\1\8_12\DesignAUTOSARComponentsExample\mymy\my_brake_pedal_sensor_autosar_rtw\my_brake_pedal_sensor_types.h
+C:\Users\Mhamed\Documents\project\matlab project\1\8_12\DesignAUTOSARComponentsExample\mymy\my_brake_pedal_sensor_autosar_rtw\my_brake_pedal_sensor_component.arxml
+C:\Users\Mhamed\Documents\project\matlab project\1\8_12\DesignAUTOSARComponentsExample\mymy\my_brake_pedal_sensor_autosar_rtw\my_brake_pedal_sensor_datatype.arxml
+C:\Users\Mhamed\Documents\project\matlab project\1\8_12\DesignAUTOSARComponentsExample\mymy\my_brake_pedal_sensor_autosar_rtw\my_brake_pedal_sensor_implementation.arxml
+C:\Users\Mhamed\Documents\project\matlab project\1\8_12\DesignAUTOSARComponentsExample\mymy\my_brake_pedal_sensor_autosar_rtw\my_brake_pedal_sensor_interface.arxml
+C:\Users\Mhamed\Documents\project\matlab project\1\8_12\DesignAUTOSARComponentsExample\mymy\my_brake_pedal_sensor_autosar_rtw\my_brake_pedal_sensor_manifest.txt

@@ -1,0 +1,1 @@
+var modelInfo = {model:"my_brake_throttle_sensor"};var modelHierarchy=[{model:"my_brake_throttle_sensor",relativePath:"_internal.html",parent:"null"},];var AddCode = true;
