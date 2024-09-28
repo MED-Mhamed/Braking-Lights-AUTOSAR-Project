@@ -40,3 +40,23 @@ The project is organized into the following folders:
 1. Clone this repository to your local machine:
    ```bash
    git clone https://github.com/yourusername/BrakingLight_AUTOSAR.git
+2.Open MATLAB and ensure that your MATLAB path is set to the directory where the repository was cloned.
+
+3.Load the Data Dictionary file (interfaces.sldd) and the necessary models:
+
+4.Open my_brake_system.slx or new_my_brake_system.slx to load the complete braking system.
+To interactively simulate the system, open the Simulink model and run it in Simulink.
+
+If desired, generate AUTOSAR code by using Simulink Code Generator for your hardware implementation.
+
+##Project Architecture and Simulation
+1. Architecture and Software Components (SWCs)
+This diagram shows the architecture and SWCs of the braking light AUTOSAR system, detailing the components such as the brake actuator, pedal sensor, throttle sensor, and the brake controller.
+
+
+2. Simulation Results
+Below is an image showing the simulation results of the braking light AUTOSAR system.
+ 
+##Open to Development
+
+This is the first version of the braking light AUTOSAR project, and I am open to collaboration and suggestions for improvement. Feel free to open issues or contribute to future versions.
