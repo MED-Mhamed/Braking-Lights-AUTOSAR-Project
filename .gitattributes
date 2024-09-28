@@ -1,3 +1,16 @@
 # Auto detect text files and perform LF normalization
 * text=auto
-*.html linguist-detectable=false
+# Ignore HTML files from language stats
+*.html linguist-vendored
+
+# Mark MATLAB files
+*.m linguist-language=MATLAB
+*.slx linguist-language=MATLAB
+*.sldd linguist-language=MATLAB
+
+# Mark C files
+*.c linguist-language=C
+*.h linguist-language=C
+
+# Mark ARXML files
+*.arxml linguist-language=ARXML
